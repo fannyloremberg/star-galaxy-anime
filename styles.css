@@ -842,3 +842,52 @@ textarea { min-height: 140px; resize: vertical; }
   -webkit-mask-image: radial-gradient(ellipse 72% 70% at 50% 50%, #000 55%, transparent 100%);
   mask-image: radial-gradient(ellipse 72% 70% at 50% 50%, #000 55%, transparent 100%);
 }
+
+/* Mascote mago em cima da lua da logo */
+.logo-palco {
+  position: relative;
+  display: block;
+  width: min(100%, 620px);
+  margin: 58px 0 4px -14px;
+  animation: flutuar 6s ease-in-out infinite;
+}
+.logo-palco .hero-logo { width: 100%; margin: 0; animation: brilho-letreiro 4s ease-in-out infinite alternate; }
+.mago {
+  position: absolute;
+  left: 34%;
+  top: 22%;
+  width: 19%;
+  transform: translate(-50%, -72%);
+  pointer-events: none;
+  filter: drop-shadow(0 0 8px rgba(200, 180, 255, 0.55));
+}
+.mago img { display: block; width: 100%; height: auto; }
+.mago-pisca, .mago-acena { position: absolute; inset: 0; opacity: 0; }
+.mago-base { animation: mago-base 7s steps(1, end) infinite; }
+.mago-pisca { animation: mago-pisca 7s steps(1, end) infinite; }
+.mago-acena { animation: mago-acena 7s steps(1, end) infinite; transform-origin: 50% 80%; }
+/* 0-2s parado, 2s pisca, 3.5-5.5s acena, 6.2s pisca de novo */
+@keyframes mago-base {
+  0%, 27%, 30%, 50% { opacity: 1; }
+  28.5% { opacity: 0; }
+  50.01%, 79% { opacity: 0; }
+  79.01%, 88% { opacity: 1; }
+  88.5% { opacity: 0; }
+  90.5%, 100% { opacity: 1; }
+}
+@keyframes mago-pisca {
+  0%, 28.5% { opacity: 0; }
+  28.51%, 30% { opacity: 1; }
+  30.01%, 88.5% { opacity: 0; }
+  88.51%, 90.5% { opacity: 1; }
+  90.51%, 100% { opacity: 0; }
+}
+@keyframes mago-acena {
+  0%, 50% { opacity: 0; }
+  50.01%, 79% { opacity: 1; }
+  79.01%, 100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mago-pisca, .mago-acena { display: none; }
+  .mago-base { opacity: 1; }
+}
