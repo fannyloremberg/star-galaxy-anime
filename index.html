@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Star Galaxy Anime: cosplay, figures, estátuas e bonequinhos de vinil. Demonstração acadêmica, sem compra real.">
+  <meta name="robots" content="noindex">
+  <title>Star Galaxy Anime</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <div class="ceu" aria-hidden="true">
+    <div class="ceu-brilho"></div>
+    <div class="ceu-estrelas"></div>
+  </div>
+
+  <header class="topo">
+    <p class="faixa">Demonstração acadêmica · sem compra real</p>
+    <div class="miolo barra">
+      <a class="marca" href="#inicio">
+        <img src="assets/marca.svg" alt="" width="44" height="44">
+        <span>
+          <span class="marca-nome">Star Galaxy Anime</span>
+          <span class="marca-sub">Cosplay e colecionáveis</span>
+        </span>
+      </a>
+      <button type="button" class="botao botao-secundario abrir-menu" id="abrir-menu" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+      <nav id="menu-principal" class="menu" aria-label="Seções">
+        <a href="#inicio" aria-current="true">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#encomendas">Encomendas</a>
+        <a href="#carrinho">Carrinho</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <a class="botao botao-secundario" id="atalho-carrinho" href="#carrinho" aria-label="Carrinho, vazio">
+        Carrinho <span class="contador" id="contador-carrinho">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <noscript>
+      <style>#menu-principal { display: flex !important; }</style>
+      <p class="aviso miolo">O catálogo desta vitrine usa o JavaScript de app.js, no seu navegador.</p>
+    </noscript>
+    <p class="aviso miolo" id="aviso-armazenamento" hidden>Este navegador não deixou guardar o carrinho. Ele continua na tela até você recarregar.</p>
+
+    <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="miolo hero-grade">
+        <div class="hero-texto">
+          <p class="kicker">Coleção da galáxia</p>
+          <h1 id="titulo-inicio">Star Galaxy Anime</h1>
+          <p class="lead">Cosplay de corpo inteiro, estátuas, figures e bonequinhos de vinil. A peça pode sair do mostruário ou nascer de uma descrição sua, do elenco de Naruto a um único detalhe.</p>
+          <div class="acoes">
+            <a class="botao" href="#catalogo">Entrar no catálogo</a>
+            <a class="botao botao-secundario" href="#encomendas">Encomendar sob medida</a>
+          </div>
+          <ul class="hero-notas">
+            <li>Cosplay com medidas</li>
+            <li>Figures e estátuas</li>
+            <li>Bonequinhos de vinil</li>
+          </ul>
+        </div>
+        <div class="hero-palco">
+          <figure class="hero-foto">
+            <img src="assets/estudio/cosplay-asuka.jpg" width="900" height="1200" alt="Ilustração de produto: plugsuit vermelho inteiro em manequim, com perucas laranja em maria-chiquinha.">
+            <figcaption>
+              <span class="kicker">Peça de abertura</span>
+              <strong>Cosplay de Asuka</strong>
+              <em>Evangelion · sob encomenda</em>
+            </figcaption>
+          </figure>
+          <figure class="hero-flutuante">
+            <img src="assets/estudio/estatua-luffy.jpg" width="900" height="1200" alt="Ilustração de produto: estátua inteira de Luffy em fundo de estúdio, chapéu de palha e casaco vermelho.">
+            <figcaption>Estátua de Luffy</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="categorias" aria-labelledby="titulo-categorias">
+      <div class="miolo">
+        <p class="kicker">Cinco salas</p>
+        <h2 id="titulo-categorias">O que a loja guarda</h2>
+        <div class="grade-categorias">
+          <button type="button" class="categoria-card" data-categoria="Cosplay" style="background-image:url('assets/estudio/cosplay-goku.jpg')">
+            <span>Cosplay</span>
+          </button>
+          <button type="button" class="categoria-card" data-categoria="Funko Pop" style="background-image:url('assets/estudio/vinil-naruto.jpg')">
+            <span>Funko Pop</span>
+          </button>
+          <button type="button" class="categoria-card" data-categoria="Action figures" style="background-image:url('assets/estudio/estatua-luffy.jpg')">
+            <span>Action figures</span>
+          </button>
+          <button type="button" class="categoria-card" data-categoria="Roupas" style="background-image:url('assets/estudio/haori-xadrez.jpg')">
+            <span>Roupas</span>
+          </button>
+          <button type="button" class="categoria-card" data-categoria="Acessórios" style="background-image:url('assets/estudio/tiara-lua.jpg')">
+            <span>Acessórios</span>
+          </button>
+        </div>
+        <p class="dica categoria-nota">As imagens de produto são ilustrações da vitrine, em fundo de estúdio. Não são fotos de convenção nem peças genuínas de fabricante. A marca da loja é Star Galaxy Anime.</p>
+      </div>
+    </section>
+
+    <section class="secao" id="vitrine" aria-labelledby="titulo-vitrine">
+      <div class="miolo">
+        <p class="kicker">Escolha da casa</p>
+        <h2 id="titulo-vitrine">Três peças na frente da galeria</h2>
+        <div class="bento">
+          <article class="bento-card bento-grande">
+            <img src="assets/estudio/cosplay-zoro.jpg" alt="Ilustração de produto: cosplay de Zoro inteiro, quimono verde e três espadas, em manequim.">
+            <div>
+              <p class="kicker">Cosplay</p>
+              <h3>Roronoa Zoro</h3>
+              <p>Três espadas, quimono verde e a postura de quem ocupa o palco inteiro.</p>
+            </div>
+          </article>
+          <article class="bento-card">
+            <img src="assets/estudio/figure-ace.jpg" alt="Ilustração de produto: figure de Ace ajoelhado, com chamas e colar, em fundo de estúdio.">
+            <div>
+              <p class="kicker">Action figure</p>
+              <h3>Portgas D. Ace</h3>
+              <p>Figure com chamas e contas, em escala de prateleira.</p>
+            </div>
+          </article>
+          <article class="bento-card">
+            <img src="assets/estudio/cosplay-sailor.jpg" alt="Ilustração de produto: cosplay de Sailor Moon inteiro, laço rosa e botas, em manequim.">
+            <div>
+              <p class="kicker">Cosplay</p>
+              <h3>Sailor Moon</h3>
+              <p>Laço, botas e o uniforme clássico, pronto para encomenda de medida.</p>
+            </div>
+          </article>
+          <article class="bento-card bento-largo">
+            <img src="assets/estudio/elenco-naruto.jpg" alt="Ilustração de produto: cinco manequins com trajes laranja, branco, azul, amarelo e preto, em fundo de estúdio.">
+            <div>
+              <p class="kicker">Encomenda de elenco</p>
+              <h3>Naruto, o grupo inteiro</h3>
+              <p>Quando a peça pede vários personagens, o prazo de feitura cresce. Descreva cada um no formulário.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="catalogo" aria-labelledby="titulo-catalogo">
+      <div class="miolo">
+        <p class="kicker">A coleção</p>
+        <h2 id="titulo-catalogo">Catálogo</h2>
+        <p class="lead">Filtre por sala, universo ou disponibilidade. A busca ignora maiúsculas e acentos.</p>
+        <div class="painel ferramentas">
+          <form id="form-busca" class="busca" role="search">
+            <label for="busca">Buscar por nome, categoria ou anime</label>
+            <input id="busca" name="busca" type="search" maxlength="80" autocomplete="off" spellcheck="false" aria-controls="lista-produtos" aria-describedby="dica-busca">
+            <p class="dica" id="dica-busca">Cada palavra entra no nome, na categoria e no universo.</p>
+          </form>
+          <div>
+            <label for="categoria">Categoria</label>
+            <select id="categoria">
+              <option value="todas">Todas</option>
+              <option value="Cosplay">Cosplay</option>
+              <option value="Funko Pop">Funko Pop</option>
+              <option value="Action figures">Action figures</option>
+              <option value="Roupas">Roupas</option>
+              <option value="Acessórios">Acessórios</option>
+            </select>
+          </div>
+          <div>
+            <label for="universo">Universo</label>
+            <select id="universo">
+              <option value="todos">Todos</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Disponibilidade</legend>
+            <div class="pilulas">
+              <label class="pilula"><input type="radio" name="disponibilidade" value="todos" checked> <span>Todos</span></label>
+              <label class="pilula"><input type="radio" name="disponibilidade" value="estoque"> <span>Em estoque</span></label>
+              <label class="pilula"><input type="radio" name="disponibilidade" value="encomenda"> <span>Sob encomenda</span></label>
+            </div>
+          </fieldset>
+          <div class="ordem">
+            <label for="ordem">Ordenar</label>
+            <select id="ordem">
+              <option value="preco-desc" selected>Preço (maior para o menor)</option>
+              <option value="nome-az">Nome (A–Z)</option>
+              <option value="nome-za">Nome (Z–A)</option>
+              <option value="preco-asc">Preço (menor para o maior)</option>
+            </select>
+          </div>
+          <button type="button" class="botao botao-secundario" id="redefinir">Redefinir lista</button>
+        </div>
+        <p class="contagem" id="contagem-visual" aria-hidden="true"></p>
+        <p class="somente-leitor" id="contagem-ao-vivo" aria-live="polite"></p>
+        <ul class="grade" id="lista-produtos"></ul>
+      </div>
+    </section>
+
+    <section class="secao" id="encomendas" aria-labelledby="titulo-encomendas">
+      <div class="miolo">
+        <p class="kicker">Sob medida</p>
+        <h2 id="titulo-encomendas">Encomenda</h2>
+        <p class="lead">Cosplay, figure, estátua, bonequinho, roupa ou acessório. Uma peça simples fica entre 8 e 30 dias úteis. Cosplay e estátua pedem mais tempo. Vários personagens, como o elenco de Naruto, passam de 40 dias úteis.</p>
+        <div class="encomenda-grade">
+          <aside class="painel exemplo" id="exemplo-naruto">
+            <img src="assets/estudio/elenco-naruto.jpg" alt="Ilustração de produto: manequins com vários trajes, sem pessoas de evento.">
+            <p class="kicker">Exemplo</p>
+            <h3>Naruto com o elenco principal</h3>
+            <p>A cliente descreve cada personagem, as cores e as medidas do corpo. A feitura dessa peça leva mais tempo do que um acessório simples.</p>
+            <button type="button" class="botao" id="usar-exemplo">Usar este exemplo</button>
+          </aside>
+          <form class="painel formulario" id="form-encomenda" novalidate>
+            <div class="resumo-erros" id="resumo-erros" role="alert" tabindex="-1" hidden>
+              <p>Corrija os campos para continuar:</p>
+              <ul id="lista-erros"></ul>
+            </div>
+            <div class="campos">
+              <div>
+                <label for="anime">Anime ou universo</label>
+                <input id="anime" name="anime" type="text" list="lista-animes" maxlength="60" autocomplete="off" spellcheck="false" aria-describedby="dica-anime" required>
+                <datalist id="lista-animes"></datalist>
+                <p class="dica" id="dica-anime">Pode ser um universo que não está no catálogo.</p>
+                <p class="mensagem-erro" id="erro-anime" hidden></p>
+              </div>
+              <div>
+                <label for="tipo">Tipo de peça</label>
+                <select id="tipo" name="tipo" required>
+                  <option value="">Selecione</option>
+                  <option value="Cosplay">Cosplay</option>
+                  <option value="Roupa">Roupa</option>
+                  <option value="Acessório">Acessório</option>
+                  <option value="Action figure">Action figure</option>
+                  <option value="Estátua">Estátua</option>
+                  <option value="Bonequinho de vinil">Bonequinho de vinil</option>
+                </select>
+                <p class="mensagem-erro" id="erro-tipo" hidden></p>
+              </div>
+              <div>
+                <label for="tamanho">Tamanho ou escala</label>
+                <select id="tamanho" name="tamanho" aria-describedby="dica-tamanho" required>
+                  <option value="">Escolha o tipo de peça primeiro</option>
+                </select>
+                <p class="dica" id="dica-tamanho">Roupa e cosplay usam P, M, G e GG. Figure e estátua usam a escala.</p>
+                <p class="mensagem-erro" id="erro-tamanho" hidden></p>
+              </div>
+              <div>
+                <label for="quantidade">Quantidade</label>
+                <input id="quantidade" name="quantidade" type="number" inputmode="numeric" min="1" max="20" step="1" value="1" aria-describedby="dica-quantidade" required>
+                <p class="dica" id="dica-quantidade">De 1 a 20 peças.</p>
+                <p class="mensagem-erro" id="erro-quantidade" hidden></p>
+              </div>
+              <div class="campo-largo" id="bloco-medidas">
+                <label for="medidas">Medidas do corpo</label>
+                <input id="medidas" name="medidas" type="text" maxlength="160" autocomplete="off" aria-describedby="dica-medidas" placeholder="Exemplo: 1,68 m, busto 88, cintura 70, quadril 94">
+                <p class="dica" id="dica-medidas">Use em cosplay e roupa. Em figure e bonequinho, pode ficar em branco.</p>
+                <p class="mensagem-erro" id="erro-medidas" hidden></p>
+              </div>
+              <div class="campo-largo">
+                <label for="descricao">Personagens e detalhes</label>
+                <textarea id="descricao" name="descricao" maxlength="800" rows="6" aria-describedby="dica-descricao" required placeholder="Quem entra na peça, cores, pose e o que não pode faltar."></textarea>
+                <p class="dica" id="dica-descricao">Mínimo de 20 caracteres. Mais personagens aumentam o prazo.</p>
+                <p class="mensagem-erro" id="erro-descricao" hidden></p>
+              </div>
+            </div>
+            <div class="prazo-box">
+              <p id="prazo-visual">Escolha o tipo de peça para ver o prazo.</p>
+              <p id="preco-visual">O valor por peça aparece ao escolher o tipo.</p>
+            </div>
+            <p class="somente-leitor" id="prazo-ao-vivo" aria-live="polite"></p>
+            <p class="aviso-acao" id="aviso-acao">Antes de continuar: nada é enviado, cobrado ou fabricado. Não há orçamento real. A encomenda entra só no carrinho deste navegador.</p>
+            <div class="acoes">
+              <button type="submit" class="botao">Adicionar encomenda ao carrinho</button>
+              <button type="button" class="botao botao-secundario" id="limpar-formulario">Limpar formulário</button>
+            </div>
+          </form>
+        </div>
+        <div class="painel confirmacao" id="confirmacao" tabindex="-1" role="status" hidden>
+          <p class="kicker">Só neste navegador</p>
+          <h3>Anotado neste navegador</h3>
+          <p><strong id="confirmacao-nome"></strong> entrou no carrinho.</p>
+          <p>Nada foi enviado e nenhum valor foi cobrado.</p>
+          <p>Prazo estimado: <strong id="confirmacao-prazo"></strong>. Isso não reserva produção.</p>
+          <p><a href="#carrinho">Ver o carrinho</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="carrinho" aria-labelledby="titulo-carrinho">
+      <div class="miolo">
+        <p class="kicker">Seu pedido</p>
+        <h2 id="titulo-carrinho">Carrinho</h2>
+        <p class="lead">Altere a quantidade ou retire uma peça. O total está em reais.</p>
+        <div class="carrinho-layout">
+          <div>
+            <div class="painel vazio" id="carrinho-vazio" tabindex="-1">
+              <p>O carrinho está vazio.</p>
+              <p>Escolha uma peça no catálogo ou descreva uma encomenda. Ele fica salvo só neste navegador.</p>
+              <a class="botao" href="#catalogo">Ir ao catálogo</a>
+            </div>
+            <ul class="linhas" id="lista-carrinho"></ul>
+          </div>
+          <aside class="painel resumo" aria-labelledby="titulo-resumo">
+            <h3 id="titulo-resumo">Resumo</h3>
+            <p class="resumo-linha"><span>Peças</span> <strong id="resumo-pecas">0 peças</strong></p>
+            <p class="resumo-linha resumo-total"><span>Total</span> <strong id="resumo-total">R$&nbsp;0,00</strong></p>
+            <p class="dica" id="nota-exportacao">Simulação neste navegador: sem pagamento e sem envio de dados.</p>
+            <button type="button" class="botao" id="exportar-pedido" aria-describedby="nota-exportacao">Baixar pedido (.txt)</button>
+            <button type="button" class="botao botao-secundario" id="limpar-carrinho">Esvaziar carrinho</button>
+            <button type="button" class="botao botao-secundario" id="cancelar-limpeza" hidden>Cancelar</button>
+            <p id="mensagem-carrinho" role="status"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="miolo">
+        <p class="kicker">O trabalho</p>
+        <h2 id="titulo-sobre">Sobre</h2>
+        <div class="sobre-grade">
+          <article class="painel">
+            <h3>Esta vitrine</h3>
+            <p>Star Galaxy Anime mostra cosplay, figures, estátuas, roupas, acessórios e bonequinhos de vinil. Preços, estoque e prazos existem para a interface. Não há compra, pagamento, cadastro nem produto oficial ou licenciado à venda.</p>
+            <p>Os bonequinhos desenhados nesta página são ilustrações da loja. A palavra Funko Pop nomeia a sala do catálogo, não uma loja da fabricante.</p>
+          </article>
+          <article class="painel">
+            <h3>Programa em C</h3>
+            <p>O programa em C foi entregue à parte. Esta página não o executa, não lê a saída dele e não está integrada a ele.</p>
+            <p>O código está em <code>index.html</code>, <code>styles.css</code>, <code>app.js</code> e na pasta <code>assets</code>. O README explica o Live Server, os limites e os créditos das fotos.</p>
+          </article>
+        </div>
+        <details class="painel creditos">
+          <summary>Créditos das imagens</summary>
+          <p>As imagens em <code>assets/estudio</code> são ilustrações originais feitas para esta demonstração, com a peça inteira e fundo limpo. Não são fotografias de fabricante, de lojista nem de pessoas em evento. Registrar a origem aqui não concede licença sobre personagens, marcas ou uma fotografia oficial. Não havia arquivo público, com reuso permitido, da foto exata de cada item cadastrado.</p>
+          <p>Fontes da página: Fraunces e Outfit, SIL Open Font License, arquivos em <code>assets/fontes</code>.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo">
+      <p><strong>Star Galaxy Anime</strong> — projeto acadêmico de Stefani Cezar Vilela (Fanny), RGM 50015818. Demonstração local: sem compra real, sem pagamento e sem produtos oficiais ou licenciados.</p>
+      <p>Complemento visual de um programa em C entregue separadamente. Este site não substitui esse programa e não está integrado a ele.</p>
+      <p><a href="#inicio">Voltar ao início</a></p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
